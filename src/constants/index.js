@@ -25,7 +25,8 @@ import {
     tripguide,
     threejs,
     cwp,
-    lios
+    lios,
+    portfolio
   } from "../assets";
   
   export const navLinks = [
@@ -190,16 +191,16 @@ import {
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "React/Three Portfolio",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Personal Web developer portfolio with 3D interactive animations, using dependencies such as framer-motion react/three and react/three/drei and HOC's.",
       tags: [
         {
           name: "react",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "ThreeJS",
           color: "green-text-gradient",
         },
         {
@@ -207,8 +208,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: portfolio,
+      source_code_link: "https://github.com/KrlosDev/Krlos-Portfolio",
     },
     {
       name: "Job IT",

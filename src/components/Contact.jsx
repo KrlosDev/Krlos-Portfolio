@@ -5,6 +5,7 @@ import {styles} from '../styles';
 import {EarthCanvas} from './canvas';
 import {SectionWrapper} from '../hoc';
 import { slideIn } from '../utils/motion';
+import { Alert } from '@mui/material';
 
 const Contact = () => {
   const formRef = useRef();
@@ -13,8 +14,36 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
-  const handleChange =(e)=>{}
-  const handleSubmit =(e)=>{}
+  const handleChange =(e)=>{
+    const {name, value} = e.target;
+    setForm({...form, [name]: value})
+  }
+  const handleSubmit =(e)=>{
+    e.preventDefault();
+    setLoading(true);
+    emailjs.send(
+      'service_k3ffn1i',
+      'template_c8zg19q',
+      {
+        from_name: form.name,
+        to_name: 'Carlos',
+        from_email: form.email,
+        to_email:'carlosb@bbhint.com',
+        message: form.message,
+      },
+      'xmKjv0sbEHMt9aLCN'
+    )
+    .then(()=>{
+      setLoading(false);
+      setForm({name:'', email:'', message:''})
+      return(<Alert severity="success">Thank you. I will contact you as soon as possible</Alert>);
+      
+    },(error)=>{
+      setLoading(false)
+      console.log(error)
+      return(<Alert severity="error">This was an error alert — you can also contact me at <a href='mailto:krlos.abarahona@gmail.com'>krlos.abarahona@gmail.com'</a></Alert>)
+    })
+  }
 
   return (
     <div className='xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden'>
