@@ -196,7 +196,7 @@ import {
         "Personal Web developer portfolio with 3D interactive animations, using dependencies such as framer-motion react/three and react/three/drei and HOC's.",
       tags: [
         {
-          name: "react",
+          name: "ReactJS",
           color: "blue-text-gradient",
         },
         {
@@ -212,46 +212,47 @@ import {
       source_code_link: "https://github.com/KrlosDev/Krlos-Portfolio",
     },
     {
-      name: "Job IT",
+      name: "OpenAI API Codex",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Web application that enables users to ask code related questions or other inquiries and interact with GPT-3 using the Open AI API. Is writen in vanilla JS ",
       tags: [
         {
-          name: "react",
-          color: "blue-text-gradient",
+          name: "JavaScript",
+          color: "orange-text-gradient",
         },
+        
         {
-          name: "restapi",
-          color: "green-text-gradient",
-        },
-        {
-          name: "scss",
+          name: "CSS",
           color: "pink-text-gradient",
         },
       ],
       image: jobit,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/KrlosDev/GTP-3-API-Codex-App",
     },
     {
-      name: "Trip Guide",
+      name: "Project Tndrfy",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "An Ambitious project that merges the best features of both Spotify and Tinder, making it the best version of both in terms of user experience this a work in progress",
       tags: [
         {
-          name: "nextjs",
+          name: "ReactJS",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "MongoDB",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "ScSS",
           color: "pink-text-gradient",
+        },
+        {
+          name: "NodeJS",
+          color: "green-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/KrlosDev/project-tndrfy",
     },
   ];
   
