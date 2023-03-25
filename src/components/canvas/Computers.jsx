@@ -7,7 +7,7 @@ const Sagi = ({isMobile}) => {
   return (
     
     <mesh>
-       <primitive object={sagiA.scene} scale={isMobile ? 2 : 3} position={isMobile?[0,-1,0]:[0,-0.5, -0]} rotation={[0, 0, 0]}/>
+       <primitive object={sagiA.scene} scale={isMobile ? 2 : 3.5} position={isMobile?[0,-1,0]:[0,-0.5, -0]} rotation={[0, 0, 0]}/>
     </mesh>
   )
 }
